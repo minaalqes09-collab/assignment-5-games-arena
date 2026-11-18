@@ -1,0 +1,25 @@
+.footer-main {
+  background-color: #0b0e14;
+  position: relative;
+}
+
+.footer-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--neon-primary);
+}
+
+.footer-social {
+  color: var(--text-gray);
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social:hover {
+  color: var(--neon-primary);
+}

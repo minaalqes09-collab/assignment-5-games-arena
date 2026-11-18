@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --neon-primary: #ccff00;
+  --neon-hover: #b8e600;
+  --dark-bg: #0b0e14;
+  --card-bg: #12161f;
+  --text-gray: #a0aab8;
+  --font-heading: "Days One", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+.neon-text {
+  color: var(--neon-primary) !important;
+}
+
+.custom-navbar {
+  background-color: rgba(11, 14, 20, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 14px 0;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.custom-navbar .nav-link {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 8px 12px !important;
+  transition: color 0.25s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: var(--neon-primary) !important;
+}
+
+.custom-navbar .nav-link.active {
+  color: var(--neon-primary);
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: #d1d5db;
+  font-size: 1.1rem;
+  padding: 6px;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: var(--neon-primary);
+  transform: translateY(-1px);
+}
+
+.btn-neon-sm {
+  background-color: var(--neon-primary);
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.btn-neon-sm:hover {
+  background-color: var(--neon-hover);
+  color: #000000;
+  box-shadow: 0 0 15px rgba(204, 255, 0, 0.4);
+}
+
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 69px);
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: #0b0e14;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.14;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+  line-height: 1.18;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.btn-neon-lg {
+  background-color: var(--neon-primary);
+  color: #0b0e14;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 1.5px solid var(--neon-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-neon-lg:hover {
+  background-color: var(--neon-hover);
+  color: #0b0e14;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(204, 255, 0, 0.35);
+}
+
+.btn-outline-neon-lg {
+  background-color: rgba(18, 22, 31, 0.6);
+  color: var(--neon-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(204, 255, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-neon-lg:hover {
+  background-color: rgba(204, 255, 0, 0.1);
+  color: var(--neon-primary);
+  border-color: var(--neon-primary);
+  transform: translateY(-2px);
+}
+
+.hero-img-wrapper {
+  padding-bottom: 20px;
+}
+
+.img-border-box {
+  border-radius: 16px;
+  padding: 3px;
+
+  background: linear-gradient(135deg, #ccff00 0%, #22c55e 100%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.hero-img {
+  border-radius: 13px;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+.stats-badge {
+  position: absolute;
+  bottom: -5px;
+  left: -25px;
+  background-color: #12161f;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 16px 24px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.badge-label {
+  color: var(--text-gray);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.badge-number {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,105 @@
+.team-section {
+  background-color: #0b0e14;
+  position: relative;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-card {
+  position: relative;
+  background-color: var(--card-bg);
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  height: 380px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.team-img-box {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.team-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(11, 14, 20, 0.95) 0%,
+    rgba(11, 14, 20, 0.5) 45%,
+    transparent 100%
+  );
+  z-index: 2;
+  transition: opacity 0.35s ease;
+}
+
+.team-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 22px;
+  z-index: 3;
+}
+
+.team-card-side-text {
+  position: absolute;
+  right: 14px;
+  top: 22px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.25);
+  text-transform: uppercase;
+  z-index: 3;
+  pointer-events: none;
+  transition: color 0.3s ease;
+}
+
+.team-card:hover {
+  border-color: var(--neon-primary);
+  box-shadow: 0 15px 35px rgba(204, 255, 0, 0.2);
+}
+
+.team-card:hover .team-img-box img {
+  filter: grayscale(0%);
+  transform: scale(1.06);
+}
+
+.team-card:hover .team-card-side-text {
+  color: var(--neon-primary);
+}
+
+.team-name {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.team-role {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--neon-primary);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.team-sub {
+  font-size: 0.75rem;
+  color: var(--text-gray);
+  margin-bottom: 0;
+}
